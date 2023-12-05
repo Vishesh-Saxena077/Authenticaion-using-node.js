@@ -1,3 +1,4 @@
+//Level - 3
 //jshint esversion:6
 require('dotenv').config();
 const express = require('express');
@@ -54,7 +55,7 @@ app.post("/register", async(req, res) => {
         } else {
             const newUser = new User({
                 email: username,
-                password: md5(password),
+                password: md5(password), //HASHIGN PASSWORD
             });
 
             await newUser.save().then(() => {
