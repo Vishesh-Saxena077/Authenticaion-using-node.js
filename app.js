@@ -32,7 +32,7 @@ const userSchema = new mongoose.Schema({
     password: String
 });
 
-// ("collection", innerentries)
+// ("collection name", innerentries)
 const User = new mongoose.model("User", userSchema);
 
 
